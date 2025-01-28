@@ -1,7 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+    header {
+      background: #3f51b5;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: #3f51b5;
+      text-transform: uppercase;
+      border-bottom: 2px solid #f4f4f4;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #3f51b5;
+      color: #fff;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #3f51b5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background: #303f9f;
+    }
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Your Name</strong>, a [Your Job/Role] based in [Location]. 
+        I specialize in [Your Skills/Interests], and I love working on projects that 
+        involve [Some Keyword or Specialty].
+      </p>
+      <p>
+        When I'm not coding, you can find me [Hobby or Activity]. 
+        Feel free to connect with me on 
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> 
+        or check out my repos on 
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        Below are a few projects I've worked on recently. Want to see more? 
+        Check out my <a href="https://github.com/username" target="_blank" rel="noopener">GitHub profile</a>.
+      </p>
+      <ul>
+        <li>
+          <strong>Project One:</strong> Brief description of what this project is about.
+          <br/>
+          <a class="button" href="https://github.com/username/project-one" target="_blank" rel="noopener">View Repo</a>
+        </li>
+        <li>
+          <strong>Project Two:</strong> Another brief description.
+          <br/>
+          <a class="button" href="https://github.com/username/project-two" target="_blank" rel="noopener">View Repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Interested in working together or have any questions?
+      </p>
+      <p>
+        <a class="button" href="mailto:your.email@example.com">Email Me</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Your Name
+    </p>
+  </footer>
+
+  <script>
+    // Set current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
